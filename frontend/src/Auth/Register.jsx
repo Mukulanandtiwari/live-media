@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Card, Flex, Form, Input, Spin, Typography, Alert } from 'antd';
 import { Link } from 'react-router-dom';
 import registerImage from '../assets/signup.jpg';
-import useSignup from '../hooks/useSignup';
+import useSignup from '../hooks/useSignup.jsx';
 
 const Register = () => {
     const { loading, error, registerUser } = useSignup();

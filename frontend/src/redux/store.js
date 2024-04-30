@@ -1,8 +1,7 @@
 // store.js
 
 import { createStore, combineReducers } from 'redux';
-import authReducer from './reducers/SignLogReducer.js';
-// import authReducer from './reducers/authReducer.js';
+import authReducer from './reducers/authReducer.js';
 
 const rootReducer = combineReducers({
   auth: authReducer

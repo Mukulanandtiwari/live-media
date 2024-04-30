@@ -1,5 +1,3 @@
-// contexts/AuthContext.jsx
-
 import { createContext, useContext, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setAuthData, clearAuthData } from '../redux/actions/authActions.js';

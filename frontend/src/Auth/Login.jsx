@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Card, Flex, Form, Input, Spin, Typography, Alert } from 'antd';
 import { Link } from 'react-router-dom';
 import loginImage from '../assets/signin.jpg';
-import useLogin from '../hooks/useLogin';
+import useLogin from '../hooks/useLogin.jsx';
 
 const Login = () => {
   const { error, loading, loginUser } = useLogin();

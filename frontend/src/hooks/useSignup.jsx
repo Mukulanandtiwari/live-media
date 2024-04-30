@@ -1,9 +1,7 @@
-// hooks/useSignup.js
-
 // import { useState } from 'react';
 import { message } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
-import { signupRequest, signupSuccess, signupFailure } from '../redux/actions/SignLogActions.js';
+import { signupRequest, signupSuccess, signupFailure, setAuthData } from '../redux/actions/authActions.js';
 
 const useSignup = () => {
     const dispatch = useDispatch();
@@ -28,6 +26,7 @@ const useSignup = () => {
             if (res.status === 201) {
                 message.success(data.message);
                 dispatch(signupSuccess(data.token, data.user));
+                dispatch(setAuthData(data.token, data.user)); ////
             } else if (res.status === 400) {
                 dispatch(signupFailure(data.message));
             } else if (res.status === 409) { 
