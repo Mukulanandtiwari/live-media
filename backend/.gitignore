@@ -5,8 +5,8 @@
 *.log
 
 # Ignore environment-specific configuration files
-.env
-.env.*
+# .env
+# .env.*
 
 # Ignore dependencies installed via npm or yarn
 yarn.lock
